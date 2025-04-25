@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptocurrency Guide</title>
     <link rel="stylesheet" href="./CSS/one_page_website.css">
-    <style>
-
-    </style>
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,20 +26,17 @@
         <h2>Popular Cryptocurrencies</h2>
         <div class="coin-grid">
             <div class="coin-card">
-                <!---<div class="coin-image">[Bitcoin Logo]</div>-->
-                <img class="coin-image" src="bitcoin.jpg" alt="">
+                <img class="coin-image lightbox-trigger" src="bitcoin.jpg" alt="Bitcoin" data-large="bitcoin.jpg">
                 <h3>Bitcoin</h3>
                 <p>The first and most well-known cryptocurrency.</p>
             </div>
             <div class="coin-card">
-                <!---<div class="coin-image">[Ethereum Logo]</div>-->
-                <img class="coin-image" src="ethereum.jpg" alt="Ethereum">
+                <img class="coin-image lightbox-trigger" src="ethereum.jpg" alt="Ethereum" data-large="ethereum.jpg">
                 <h3>Ethereum</h3>
                 <p>Known for its smart contract capabilities.</p>
             </div>
             <div class="coin-card">
-                <!---<div class="coin-image">[Cardano Logo]</div>-->
-                <img class="coin-image" src="cardano.webp" alt="Cardano">
+                <img class="coin-image lightbox-trigger" src="cardano.webp" alt="Cardano" data-large="cardano.webp">
                 <h3>Cardano</h3>
                 <p>Focus on sustainability and scalability.</p>
             </div>
@@ -63,8 +58,14 @@
         </div>
     </div>
 
+    <!-- Lightbox Structure -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">×</span>
+        <img class="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+
     <footer>
-        <p>&copy; 2025 Cryptocurrency Guide. All rights reserved.</p>
+        <p>© 2025 Cryptocurrency Guide. All rights reserved.</p>
     </footer>
 </body>
 </html>
